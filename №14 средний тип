@@ -1,3 +1,4 @@
 for x in '0123456789ABCDEFGH':
-    if (int(f"AB5{x}3", 18) + int(f"EF{x}13", 18)) % 17 == 0:
-        print(x, (int(f"AB5{x}3", 18) + int(f"EF{x}13", 18)) // 17)
+    s = int(f"AB5{x}3", 18) + int(f"EF{x}13", 18)
+    if s % 17 == 0:
+        print(x, s // 17)
